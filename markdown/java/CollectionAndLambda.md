@@ -117,3 +117,54 @@ new 연산자 다음 바로 인터페이스 compartor
 익명 클래스 - 1회성 기능 사용을 위해, 사용하기위해선 클래스를 객체화 할 필요가 있다.
 
 자바 - 객체지향 프로그래밍 -> 클래스가 필요 -> 클래스를 객체화 -> 실행
+
+- - -
+
+람다식 - 자바8부터 지원, 함수형 프로그래밍 형태 지원
+
+람다식 & 스트림 => 선택사항, 코드 간결화 가능, 함수형 프로그래밍 지원
+
+람다식 - 구현부가 한 줄인 경우 중괄호 {} 생략 가능 & 그 한줄이 리턴되는 값으로 판단, return 키워드 생략 가능
+
+```java
+	Collections.sort(names, (o1, o2) -> // 메서드의 파라미터 부분, 화살표 기준 오른편은 구현 부분
+                                        // 타입은 인터페이스를 보고 유추, 생략 가능
+		Integer.compare(o1.length(), o2.length()) // 메서드 구현 부, 한줄로 작성하면 return 생략 가능
+	);
+
+```
+
+offline5 참고
+
+```java
+MyFunction2 test = () -> System.out.println("test"); // 함수에 다른 함수를 파라미터로 전달
+		function(test); // 다른 함수에 전달되는 함수 == 일급객체, 일급 객체를 쓸 수 있다 => 함수형 프로그래밍 언어
+```
+
+```java
+// 함수형 인터페이스 (람다식을 다루기 위한 인터페이스)
+// 제약조건: 오직 하나의 추상 메서드만 정의되어 있어야 한다.
+// static 메서드와 default 메서드의 개수에는 제약이 없다.
+@FunctionalInterface // 함수형 인터페이스인지 검사
+public interface MyFunction {
+	public abstract int max(int a, int b);
+}
+```
+
+매개변수의 개수, 반환 여부에 따라 함수형 인터페이스 사용 가능
+```java
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+/**
+ * java.util.function 패키지 활용
+ *  offline5.basic3 참고
+ */
+ ```
+
+ 
