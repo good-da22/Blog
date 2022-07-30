@@ -146,8 +146,27 @@ MyFunction2 test = () -> System.out.println("test"); // 함수에 다른 함수�
 // 제약조건: 오직 하나의 추상 메서드만 정의되어 있어야 한다.
 // static 메서드와 default 메서드의 개수에는 제약이 없다.
 @FunctionalInterface // 함수형 인터페이스인지 검사
-public interface MyFunction {
-	public abstract int max(int a, int b);
+public interface FunctionalInterface {
+	public abstract int method(test); // 다른 함수에 전달되는 함수 == 일급객체, 일급 객체를 쓸 수 있다 => 함수형 프로그래밍 언어
+
+// 2-2.
+method(() -> System.out.println("test"));
+
+// 3-1. 변수명 = 람다식 매개변수 -> { 구현/리턴 내용 };
+FunctionalInterface sum0 = (int x1, int x2) -> { return x1 + x2; };
+
+// 3-2. 구현 내용이 한 줄일 경우 return 키워드 생략 가능
+FunctionalInterface sum1 = (int x1, int x2) -> x1 + x2;
+
+// 3-3. 구현 내용이 여러 줄일 경우
+FunctionalInterface sum2 = (int x1, int x2) -> {
+	System.out.println(x1 + x2);
+	return x1 + x2;
+};
+
+// 3-4. 데이터 추론 가능 매개변수 데이터타입 생략 가능, 인터페이스 선언부를 보고 파라미터 타입을 판단
+FunctionalInterface sum3 = (x1, x2) -> x1 + x2;
+```(int a, int b);
 }
 ```
 
