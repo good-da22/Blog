@@ -42,6 +42,9 @@ Input 과 Output, 데이터의 **입력과 출력**
   - **Byte** - ByteArrayInputStream
   - **Pipe** - PipedInputStream
   - **Audio** - AudioInputStream
+
+<br>
+
 - **OutputStream**
   - **Monitor** - OutputStream
   - **File**-  FileOutputStream
@@ -59,6 +62,9 @@ Input 과 Output, 데이터의 **입력과 출력**
   - **Char** - CharArrayReader
   - **String** - StringReader
   - **Pipe** - PipedReader
+
+<br>
+
 - **Writer**
   - **Monitor** - Writer
   - **File** - FileWriter
@@ -68,7 +74,7 @@ Input 과 Output, 데이터의 **입력과 출력**
 
 <br>
 
-하나 씩 읽어오는 것은 비효율적
+하나씩 읽어오는 것은 비효율적
 
 **프로그램 성능 개선시 IO는 주요 문제**
 

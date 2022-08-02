@@ -4,15 +4,14 @@
 
 일종의 추상클래스
 
-최고 수준의 추상화 단계로 모든 메서드는 추상 메서드이다.
+**최고 수준의 추상화 단계**로 모든 메서드는 추상 메서드이다.
 
-```
-JDK 8 에서 default method 와 static method 추가
+    JDK 8 에서 default method 와 static method 추가
+    
+    추상 클래스 사용 보단 인터페이스를 주로 사용
 
-추상 클래스 사용 보단 인터페이스를 주로 사용
-```
 
-오직 추상 메서드와 상수만을 멤버로 가질 수 있다.
+오직 **추상 메서드**와 **상수**만을 멤버로 가질 수 있다.
 
   
 
@@ -26,16 +25,18 @@ JDK 8 에서 default method 와 static method 추가
 
 <br> 
 
-```
+```java
 interfac 인터페이스이름 {
     public static final 타입 멤버이름 = 값;
     public abstract 메서드이름(매개변수);
 }
 ```
 
-모든 멤버변수는 `public static final` 상수, 접근제한자 생략 가능
+<br>
 
-모든 메서드는 `public abstract` 추상 메서드, 접근제한자 생략 가능
+모든 멤버변수는 `public static final` 상수, 접근제한자 **생략 가능**
+
+모든 메서드는 `public abstract` 추상 메서드, 접근제한자 **생략 가능**
 
   
 <br><br> 
@@ -44,9 +45,9 @@ interfac 인터페이스이름 {
 
 <br> 
 
-인터페이스는 인터페이스로부터만 `extends` 키워드를 통해 상속이 가능
+인터페이스는 인터페이스로부터만 `extends` 키워드를 통해 **상속 가능**
 
-클래스와 달리 다중 상속 가능
+클래스와 달리 **다중 상속 가능**
 
 클래스의 Object와 같은 최고 조상이 없다.
 
@@ -56,7 +57,7 @@ interfac 인터페이스이름 {
 
 <br>  
 
-```
+```java
 class 클래스이름 implements 인터페이스 이름 {
     // 추상 메서드 구현
 }
@@ -80,7 +81,7 @@ class 클래스이름 implements 인터페이스 이름 {
 
 ### 인터페이스를 통한 다중 상속
 
-  <br>
+<br>
 
 '자바도 인터페이스를 이용해 다중상속이 가능하다'
 
@@ -152,7 +153,7 @@ JDK 1.8 부터 **default 메서드** 등장
 
 ### static method
 
-  
+<br>
 
 일반 static 메서드와 동일하게 별도의 인스턴스가 필요 없다.
 

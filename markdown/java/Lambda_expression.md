@@ -27,6 +27,8 @@
 FunctionalInterface 참조변수 = (int x1, int x2) -> { return x1 + x2; };
 ```
 
+<br>
+
 익명 클래스의 객체와 동등하다.
 
 **구현부가 한 줄**인 경우 **중괄호 {} 생략 가능**
@@ -37,6 +39,8 @@ FunctionalInterface 참조변수 = (int x1, int x2) -> { return x1 + x2; };
 // 구현 내용이 한 줄일 경우 return 키워드 생략 가능
 FunctionalInterface 참조변수 = (int x1, int x2) -> x1 + x2;
 ```
+
+<br>
 
 그 한줄이 리턴되는 값으로 판단, **return 키워드 생략 가능**
 
@@ -59,9 +63,11 @@ FunctionalInterface 참조변수 = (int x1, int x2) -> {
 FunctionalInterface 참조변수 = (x1, x2) -> x1 + x2;
 ```
 
+<br>
+
 문장이 아닌 식으로 끝에 **; 을 붙이지 않는다.**
 
-<br>
+<br><br>
 
 ### 함수형 인터페이스 FunctionalInterface
 

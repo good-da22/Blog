@@ -17,52 +17,62 @@
 <br>
 
 - 매개변수 없음, 반환값 없음
-  
-```java
-java.lang.Runable
-@FunctionalInterface
-public interface Runnable {
-    public abstract void run();
-}
-```
+    
+    ```java
+    java.lang.Runable
+    @FunctionalInterface
+    public interface Runnable {
+        public abstract void run();
+    }
+    ```
+
+<br>
 
 - 매개변수 없음, 반환값 있음
-```java
-@FunctionalInterface
-public interface Supplier<T> {
-    public abstract T get();
-}
-```
+    
+    ```java
+    @FunctionalInterface
+    public interface Supplier<T> {
+        public abstract T get();
+    }
+    ```
+
+<br>
 
 - 매개변수 한 개, 반환값 없음
 
-```java
-@FunctionalInterface
-public interface Consumer<T> {
-    public abstract void accept(T t);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface Consumer<T> {
+        public abstract void accept(T t);
+    }
+    ```
+
+<br>
 
 - 매개변수 한 개, 반환값 있음
   
-```java
-@FunctionalInterface
-public interface Function<T, R> {
-    public abstract R apply(T t);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface Function<T, R> {
+        public abstract R apply(T t);
+    }
+    ```
+
+<br>
 
 - 매개변수 한 개, 반환 타입 boolean
     
     조건식을 함수(람다식)로 표현하는데 사용
-```java
-@FunctionalInterface
-public interface Predicate<T> {
-    public abstract boolean test(T t);
-}
-```
 
-<br>
+    ```java
+    @FunctionalInterface
+    public interface Predicate<T> {
+        public abstract boolean test(T t);
+    }
+    ```
+
+<br><br>
 
 #### 매개변수 2개
 
@@ -70,33 +80,38 @@ public interface Predicate<T> {
 
 - 매개변수 두 개, 반환값 없음
 
-```java
-@FunctionalInterface
-public interface BiConsumer<T, U> {
-    public abstract void accept(T t, U u);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface BiConsumer<T, U> {
+        public abstract void accept(T t, U u);
+    }
+    ```
+
+<br>
 
 - 매개변수 두 개, 반환 타입 boolean
 
     조건식을 함수(람다식)로 표현하는데 사용
-```java
-@FunctionalInterface
-public interface BiPredicate<T, U> {
-    public abstract boolean test(T t, U u);
-}
-```
-
-- 매개변수 두 개, 반환값 있음
-  
-```java
-@FunctionalInterface
-public interface BiFunction<T, R> {
-    public abstract R apply(T t);
-}
-```
+    
+    ```java
+    @FunctionalInterface
+    public interface BiPredicate<T, U> {
+        public abstract boolean test(T t, U u);
+    }
+    ```
 
 <br>
+
+- 매개변수 두 개, 반환값 있음
+    
+    ```java
+    @FunctionalInterface
+    public interface BiFunction<T, R> {
+        public abstract R apply(T t);
+    }
+    ```
+
+<br><br>
 
 #### Function 변형
 
@@ -104,21 +119,23 @@ public interface BiFunction<T, R> {
 
 - Function의 자손, 매개변수와 결과의 타입이 같다.
 
-```java
-@FunctionalInterface
-public interface UnaryOperator<T> {
-    public abstract T apply(T t);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface UnaryOperator<T> {
+        public abstract T apply(T t);
+    }
+    ```
+
+<br>
 
 - BiFunction의 자손, 매개변수와 결과의 타입이 같다.
 
-```java
-@FunctionalInterface
-public interface BinaryOperator<T> {
-    public abstract T apply(T t, T t);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface BinaryOperator<T> {
+        public abstract T apply(T t, T t);
+    }
+    ```
 
 <br><br>
 
@@ -200,45 +217,45 @@ public interface BinaryOperator<T> {
 
 - A To B Function, 입력은 타입 A, 출력은 타입 B
 
-```java
-@FunctionalInterface
-public interface DoubleToIntFunction {
-    public abstract int applyAsInt(double d);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface DoubleToIntFunction {
+        public abstract int applyAsInt(double d);
+    }
+    ```
 
 <br>
 
 - To A Function, 입력은 제네릭 타입, 출력은 타입 A
 
-```java
-@FunctionalInterface
-public interface ToIntFunction<T> {
-    public abstract int applyAsInt(T value);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface ToIntFunction<T> {
+        public abstract int applyAsInt(T value);
+    }
+    ```
 
 <br>
 
 - A Function, 입력은 타입 A, 출력은 제네릭타입
 
-```java
-@FunctionalInterface
-public interface IntFunction<R> {
-    public abstract R apply(T t, U u);
-}
-```
+    ```java
+    @FunctionalInterface
+    public interface IntFunction<R> {
+        public abstract R apply(T t, U u);
+    }
+    ```
 
 <br>
 
 - Obj A Consumer, 입력은 T, 타입 A, 출력은 없음
-
-```java
-@FunctionalInterface
-public interface ObjIntConsumer<T> {
-    public abstract void apply(T t, U u);
-}
-```
+    
+    ```java
+    @FunctionalInterface
+    public interface ObjIntConsumer<T> {
+        public abstract void apply(T t, U u);
+    }
+    ```
 
 <br><br>
 

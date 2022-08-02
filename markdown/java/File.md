@@ -45,7 +45,6 @@
 - `mkdir()`
   - `public boolean mkdir()`
 
-
     새로운 디렉토리를 생성한다.
 
 - `mkdirs()`

@@ -33,6 +33,7 @@ Object 형태로 데이터 **중복을 허락한다.**
 - `Object put(Map <? extends K, ? extends V> m)`
 
     key와 value는 Generic 타입, 어떤 타입이든 사용 가능
+    
     Map에 value 객체를 key 객체에 연결(mapping)하여 저장.
 
 <br>

@@ -172,9 +172,9 @@ Reader/Writer 의 자손
 
 char 형태의 데이터를 읽기 위한 클래스
 
-Scanner - 자동 형변환을 지원하는 등 사용이 간편하지만 속도가 느리다.
+**Scanner** - 자동 형변환을 지원하는 등 사용이 간편하지만 속도가 느리다.
 
-BufferedReader - 직접 스트림을 구성해야 하지만 속도가 빠르다.
+**BufferedReader** - 직접 스트림을 구성해야 하지만 속도가 빠르다.
 
 - `BufferedReader()`
   - `public BufferedReader(Reader in)`
@@ -188,6 +188,7 @@ BufferedReader - 직접 스트림을 구성해야 하지만 속도가 빠르다.
 - `readLine()`
 
     줄 단위로 데이터를 읽어들인다.
+
 <br>
 
 - `BufferedWriter()`

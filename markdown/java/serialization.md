@@ -6,7 +6,7 @@
 
 <br>
 
-객체를 데이터 스트림으로 만드는 것
+**객체**를 **데이터 스트림**으로 만드는 것
 
 객체를 파일등에 저장하거나 네트워크로 전송하기 위해 연속적인 데이터로 변환하는 것
 
@@ -28,7 +28,7 @@
 
 추가 구현 메서드는 없다
 
-@SuppressWarnings("serial") 경고를 무시할 수 있지만 사용하지 말 것
+`@SuppressWarnings("serial")` 경고를 무시할 수 있지만 사용하지 말 것
 
 **Serializable를 구현하는 클래스를 상속**받는다면, 자식 클래스에서는 Serializable을 구현하지 않아도 된다.
 
@@ -60,7 +60,7 @@ Object 클래스는 Serializable를 구현하지 않아 직렬화 할 수 없다
 
 직렬화되는 객체에 UID가 설정되지 않았을 경우 **컴파일러가 자동 생성**
 
-**멤버 변경**으로 인한 컴파일 시마다 변경 -> InvalidClassException 발생
+**멤버 변경**으로 인한 컴파일 시마다 변경 -> **InvalidClassException** 발생
 
 직렬화되는 객체에 대해서 serialVersionUID 설정 권장
 
