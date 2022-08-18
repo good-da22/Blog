@@ -31,4 +31,4 @@ int binarySearch(int[] a, int fromIdex, int toIndex, int key)
 
 찾은 원소의 인덱스 반환
 
-못 찾을 경우, 음수 값 -> 만약 존재한다면 있어야하는 자리의 인덱스(- 삽입index - 1)
+못 찾을 경우, 음수 값 -> 만약 존재한다면 있어야하는 자리의 인덱스(-삽입index - 1)
