@@ -14,7 +14,7 @@
 - System.setErr()
 - System.setIn()
 
-<br>
+<br><br>
 
 ### java.util.Scanner
 
@@ -72,7 +72,7 @@
 
     `next()`와 달리 문자열 안에 띄어쓰기 가능(space, tab 포함 가능)
 
-<br>
+<br><br>
 
 ### java.io.BufferedReader
 
@@ -86,7 +86,7 @@ char 타입 기반
 
 대량의 데이터 처리 시 수행시간이 효율적
 
-<br>
+<br><br>
 
 ### java.lang.StringBuilder
 

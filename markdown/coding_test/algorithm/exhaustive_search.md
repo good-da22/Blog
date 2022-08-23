@@ -1,8 +1,10 @@
-## 완전 검색
+## 완전 검색(Exhaustive Search)
+
+<br><br>
 
 문제의 해법으로 생각할 수 있는 모든 경우의 수를 나열해보고 확인하는 기업
 
-brute-force 혹은 generate-and-test
+brute-force 혹은 generate-and-test 기법이라고도 한다.
 
 모든 경우의 수를 테스트한 후, 최종 해법을 도출
 
@@ -16,14 +18,14 @@ brute-force 혹은 generate-and-test
 
 그외 경우 아이디어 바꾸기
 
-
+<br>
 
 수행 속도는 느리지만 해답을 찾아낼 가능성이 크다
 
 완전 검색으로 접근하여 해답을 도출, 성능 개선을 위해 다른 알고리즘을 사용하고 해답을 확인하는 것이 바람직
 
-
+<br>
 
 많은 종류 문제들이 특정 조건을 만족하는 경우나 요소를 찾는것
 
-순열, 조합, 부분집합과 연관이 많다.
+순열(permutation), 조합(combination), 부분집합(subset)과 같은 조합적 문제들(Combinatiorial Problems)과 연관이 많다.
