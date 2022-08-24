@@ -120,6 +120,24 @@ $nPn$ 만 가능
 3. 두 위치 값(i-1, j 교환)
 4. 꼭대기위치(i)부터 맨 뒤까지 오름차순 정렬
 
+<br>
+
+NextPermutation 사용 전 숫자배열을 오름차순으로 정렬하여 가장 작은 순열 한 번 처리
+
+<br>
+
+### Next Permutation 을 통한 조합 생성
+
+<br>
+
+원소 크기와 같은 크기의 int 배열 P를 생성
+
+r개의 크기만큼 뒤에서 0이 아닌 값(ex. 1)으로 초기화
+
+nextPermutaion 과정 수행 과정마다 0이 아닌 값의 위치가 변경됨
+
+P 배열에서 0이 아닌 값이 갖고 있는 위치에 해당하는 원소가 조합에 선택된 것
+
 <br><br>
 
 ## 부분집합(subset)
@@ -160,7 +178,7 @@ generateSubSet(cnt) // cnt : 현재까지 처리한 원소 개수
         isSelected[cnt] = true
         generateSubSet(cnt + 1)
         
-        isSelected[cnt] = true
+        isSelected[cnt] = false
         generateSubSet(cnt + 1)
 
 end generateSubSet()
