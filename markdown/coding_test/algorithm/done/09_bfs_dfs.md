@@ -32,7 +32,7 @@ end BFS()
 
 <br><br>
 
-## 깊이 우선 탐색(Depth first Search, DFS)
+## 깊이 우선 탐색(Depth First Search, DFS)
 
 <br>
 

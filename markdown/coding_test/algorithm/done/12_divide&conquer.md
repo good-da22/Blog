@@ -18,7 +18,7 @@
 
 <br>
 
-시간 복잡도 : $O(n)$
+시간 복잡도 : O(n)
 
 ```
 Iterative_Power(x, n)
@@ -36,7 +36,7 @@ Iterative_Power(x, n)
 
 <br>
 
-시간 복잡도 : $O(log_2n)$
+시간 복잡도 : O(log_2n)
 
 ```
 Recursive_Power(x, n)
