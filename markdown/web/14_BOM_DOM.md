@@ -197,3 +197,72 @@ eval() 함수는 문자열로 된 JavaScript 코드를 해석한 후 실행
 
 DOM(Document Object Model)은 HTML과 XML문서의 구조를 정의하는 API 제공
 
+DOM은 문서 요소 집합을 트리 형태의 계층 구조로 HTML을 표현
+
+DOM으로 HTML 문서의 검색과 조작(추가, 수정, 삭제) 가능
+
+HTML 계층 구조의 제일 위에는 document 노드
+
+그 아래로 HTML 태그나 요소(element)들을 표현하는 노드와 문자열을 표현하는 노드 존재
+
+document는 HTML 또는 XML 문서를 표현
+
+HTMLDocument는 HTML 문서와 요소만을 표현
+
+HTMLElement의 하위 타입은 HTML 단일 요소나 요소 집합의 속성에 해당하는 JavaScript 프로퍼티를 정의
+
+Comment 노드는 HTML이나 XML의 주석을 표현
+
+<br>
+
+### 문서 객체 만들기
+
+<br>
+
+문서 객체는 text node를 갖는 객체와 갖지 않는 객체로 나뉜다.
+
+- createElement(tagName) : element node를 생성
+- createTextNode(text) : text node를 생성
+- appendChild(node) : 객체에 node를 child로 추가
+
+<br>
+
+객체의 속성 설정
+
+- setAttribute(name, value) : 객체의 속성을 지정, 웹 브라우저가 지원하지 않는 태그의 속성도 지정 가능
+- getAtrrtibute(name) : 객체의 속성값을 가져옴
+
+<br>
+
+innerHTML & innerText
+
+- innerHTML : 문자열을 HTML 태그로 삽입
+- innerText : 문자열을 text node로 삽입
+
+<br>
+
+### 문서 객체 가져오기
+
+<br>
+
+객체 가져오기
+
+- getElementById(id) : 태그의 id 속성이 id와 일치하는 element **객체** 얻기
+- getElementsByClassName(classname) : 태그의 class 속성이 classname과 일치하는 element **배열** 얻기
+- getElementsByTagName(tagname) : 태그이름이 tagname과 일치하는 element **배열** 얻기
+- getElementsByName(name) : 태그의 name 속성이 name과 일치하는 element **배열** 얻기  
+
+<br>
+
+- querySelector(selector) : selector에 일치하는 첫 번째 element **객체** 얻기
+- querySelectorAll(selector) : selector에 일치하는 모든 element **배열** 얻기
+
+<br>
+
+### 문서 객체 제거
+
+<br>
+
+객체 제거
+
+- removeChild(childnode) : 객체의 자식 노드를 제거
