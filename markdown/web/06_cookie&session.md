@@ -113,14 +113,6 @@ Browser가 종료되어도 Cookie의 만료기간이 남아 있다면, Clinet는
 
 <br>
 
-### Cookie 설정
-
-<br>
-
-![Cookie]()
-
-<br>
-
 ### Cookie 주요 기능
 
 <br>
@@ -229,8 +221,6 @@ Browser 당 하나의 JSESSIONID를 할당 받음
 
 아이디 또는 닉네임과 같이 로그인 했을 경우 자주 사용되는 정보를 session에 저장하면 DB에 접근할 필요 없이 효율적
 
-![session]()
-
 <br>
 
 ### HttpSession 주요 기능
@@ -306,3 +296,7 @@ Browser 당 하나의 JSESSIONID를 할당 받음
     전역에서 저장하기 때문에 project내의 모든 JSP에서 사용 가능
 
     Map 형식으로 관리하기 때문에 key 값의 중복을 허용하지 않는다.
+
+<br>
+
+![Cookie](./../../img/inner%20ing/cookie.png)
