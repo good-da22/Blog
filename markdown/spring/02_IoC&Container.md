@@ -26,7 +26,7 @@ JNDI Lookup
 
 JNDI 이외의 방법을 사용한다면 JNDI 관련 코드를 오브젝트 내에서 일일이 변경해주어야 한다.
 
-Lookup 한 Objecet를 필요한 타입으로 Casting 필요
+Lookup 한 Object를 필요한 타입으로 Casting 필요
 
 Naming Exception을 처리하기 위한 로직 필요
 

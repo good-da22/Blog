@@ -158,7 +158,7 @@ Enterprise Application 개발 시 복잡함을 해결하는 Spring 핵심
 - Spring JDBC DAO 추상 레이어는 다른 데이터베이스 벤더들의 예외 핸들링과 오류 메시지를 관리하는 중요한 예외계층을 제공
 
 **Spring ORM**
-- Spring Framework는 여러 ORM(Objecet Relational Mapping) Framework에 플러그인되어 Object Relational 툴(JDO, Hibernate, iBatis)을 제공
+- Spring Framework는 여러 ORM(Object Relational Mapping) Framework에 플러그인되어 Object Relational 툴(JDO, Hibernate, iBatis)을 제공
 
 **Spring Web**
 - Web Context module은 Application Context module 상위에 구현되어, Web 기반 Application에 context를 제공
