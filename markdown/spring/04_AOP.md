@@ -102,4 +102,47 @@ advice type 지정을 위해 @Before, @After 등의 advice type annotation을 �
 
 <br>
 
-page16
+@Before
+ - target 메서드 호출 이전
+
+@After
+  - target 메서드 호출 이후, java exception 문장의 finally와 같이 동작
+
+@AfterReturning
+  - target 메서드 정상 동작 후
+  - 실행 결과를 인자로 받는다. returing
+  
+@AfterThrowin
+  - target 메서드 에러 발생 후
+  - 에러를 인자로 받는다. throwing
+
+@Around
+  - target 메서드의 실행시기, 방법, 실행 여부를 결정
+  - target 메서드의 실행을 직접 수행
+  - advice 내부에서 tqrget에 접근하기 위해서 메서드의 첫 번째 인자로 ProceedingJoinPoint를 받아온다.
+  - target 메서드의 실행은 proceed() 메서드를 호출한다.
+  - 그 외 나머지 target 메서드 이전, 이후에 실행할 코드들을 작성한다.
+
+<br>
+
+### Pointcut Expression 패턴 예시
+
+<br>
+
+execution(public * *(..))
+- public 메서드 실행
+
+execution(* set*(..))
+- 메서드 이름이 set으로 시작하는 메서드 실행
+
+execution(* com.xyz.service.AccountService.*(..))
+- AccountService Interface에 정의된 모든 메서드
+
+execution(* com.xyz.service.*.*(..))
+- service package에 선언된 모든 메서드
+
+execution(* com.xyz.service..*.*(..))
+- service package 또는 그 하위 패키지에 선언된 모든 메서드 실행
+
+within(com.xyz.service.*)
+- service package 또는 그 하위 패키지의 모든 joinPoint(Spring AOP에서는 메서드 실행)
