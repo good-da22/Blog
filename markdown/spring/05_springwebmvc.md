@@ -167,8 +167,32 @@ Persistence Layer - board-dao.xml
 
 <br>
 
-### @Controller
+### Spring Web Application 동작원리
 
 <br>
 
-page25
+1. 웹 어플리케이션이 실행되면 Tomcat(WAS)에 의해 web,xml이 loading
+2. web.xml에 등록되어 있는 ContextLoaderListener (Java Class) 가 생성
+   
+   ContextLoaderListener class는 ServletContextListener interface를 구현하고 있으며, ApplicationContext를 생성하는 역할 수행
+
+3. 생성된 ContextLoaderListener는 root-context.xml를 loading
+4. root-context.xml에 등록되어 있는 Spring Container(ROOT)가 구동
+
+   이 때 개발자가 작성한 Business Logic(Service)에 대한 부분과 Database Logic(DAO), VO 객체들이 생성
+
+5. Client로 부터 요청(request)가 들어옴
+6. DispatcherServlet(Servlet)이 생성
+   
+   DispatcherServlet은 FrontController의 역할을 수행
+
+   Client로부터 요청 온 메시지를 분석하여 알맞은 PageController에게 전달하고 응답을 받아 요청에 따른 응답을 어떻게 할 지 결정
+
+   실질적인 작업은 PageController에서 이루어 진다.
+
+   이러한 클래스들을 HandlerMapping, ViewResolver Class라고 한다.
+
+7. DispatcherServlet은 servlet-context.xml을 loading
+8. 두 번째 Spring Container가 구동되며 응답에 맞는 PageController들이 동작
+
+   이 때 첫 번째 Spring Container가 구동되면서 생성된 DAO, VO, Service 클래스들과 협업하여 알맞은 작업 처리
