@@ -148,7 +148,7 @@ Bean Factory에 여러 가지 컨테이너 기능을 추가하여 Application Co
 - 객체간의 연관 관계를 설정, 클라이언트의 요청 시 Bean을 생성
 - Bean의 LifeCycle 관리 
 
-`<<interface>> ApplicationCOntext`
+`<<interface>> ApplicationContext`
 
 - Bean을 등록, 생성, 조회, 반환 관리 기능은 BeanFactory와 같다.
 - BeanFactory가 제공하는 모든 기능 제공

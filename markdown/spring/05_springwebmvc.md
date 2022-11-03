@@ -171,7 +171,7 @@ Persistence Layer - board-dao.xml
 
 <br>
 
-1. 웹 어플리케이션이 실행되면 Tomcat(WAS)에 의해 web,xml이 loading
+1. 웹 어플리케이션이 실행되면 Tomcat(WAS)에 의해 web.xml이 loading
 2. web.xml에 등록되어 있는 ContextLoaderListener (Java Class) 가 생성
    
    ContextLoaderListener class는 ServletContextListener interface를 구현하고 있으며, ApplicationContext를 생성하는 역할 수행

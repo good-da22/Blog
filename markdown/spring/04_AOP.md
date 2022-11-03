@@ -112,7 +112,7 @@ advice type 지정을 위해 @Before, @After 등의 advice type annotation을 �
   - target 메서드 정상 동작 후
   - 실행 결과를 인자로 받는다. returing
   
-@AfterThrowin
+@AfterThrowing
   - target 메서드 에러 발생 후
   - 에러를 인자로 받는다. throwing
 
