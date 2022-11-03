@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "hollowtree.vue-snippets",
+        "octref.vetur",
+        "esbenp.prettier-vscode",
+        "ecmel.vscode-html-css",
+        "yzhang.markdown-all-in-one"
+    ]
+}
