@@ -150,4 +150,114 @@ Life Cycle은 크게 나누면 Instance의 **생성**, 생성된 Instance를 화
 **destroyed**
 - Vue Instance 가 제거된 후에 호출
 
-page 30
+<br>
+
+### 보간법 interpolation
+
+<br>
+
+#### 문자열
+
+데이터 바인딩의 가장 기본 형태는 "Mustache" 구문(이중 중괄호)을 사용한 텍스트 보간
+- {{속성명}}
+
+v-once 디렉티브를 사용하여 데이터 변경 시 업데이트 되지 않는 일회성 보간을 수행
+- v-once
+
+<br>
+
+#### 원시 HTML
+
+이중 중괄호(mustaches)는 HTML이 아닌 일반 텍스트로 데이터를 해석
+
+실제 HTML을 출력하려면 v-html 디렉티브를 사용
+
+<br>
+
+#### JavaScript 표현식 사용
+
+Vue.js는 모든 데이터 바인딩 내에서 JavaScript 표현식의 모든 기능을 지원
+
+각 바인딩에 단일 표현식만 포함될 수 있다.(구문 사용 불가, 삼항 연산자 사용)
+
+<br>
+
+### Directive
+
+<br>
+
+디렉티브는 **v-** 접두사가 있는 특수 속성
+
+디렉티브 속성 값은 단일 JavaScript 표현식이 된다.(v-for) 제외
+
+디렉티브의 역할은 표현식의 값이 변경될 때 사이드 이펙트를 반응적으로 DOM에 적용
+
+<br>
+
+#### v-model
+
+양방향 바인딩 처리를 위해서 사용(form의 input, textarea)
+
+<br>
+
+#### v-bind
+
+엘리먼트의 속성과 바인딩 처리를 위해서 사용
+
+약어로 ":"로 사용 가능
+
+<br>
+
+#### v-show
+
+조건에 따라 엘리먼트를 화면에 렌더링
+
+style의 display를 변경, false일 경우 display: none 적용
+
+항상 렌더링 된다.
+
+<br>
+
+#### v-if, v-else-if, v-else
+
+조건에 따라 엘리먼트를 화면에 렌더링
+
+false일 경우 렌더링 자체가 되지 않는다. 엘리먼트 삭제
+
+<br>
+
+#### v-for
+
+배열이나 객체의 반복에 사용
+
+`v-for="요소변수 이름 in 배열"`
+
+`v-for="(요소변수 이름, 인덱스)" in 배열"`
+
+<br>
+
+#### template
+
+여러 개의 태그를 묶어서 처리해야 할 경우 template 사용
+
+v-if, v-for, component등과 함께 많이 사용
+
+<br>
+
+#### v-cloak
+
+Vue Instance가 준비될 때까지 mustache 바인딩을 숨기는데 사용
+
+`[v-cloak]`, `{display: none;}`과 같은 CSS 규칙과 함께 사용
+
+Vue Instance가 준비되면 v-cloak은 제거됨
+
+<br>
+
+### Vue method
+
+<br>
+
+Vue Instance는 생성과 관련된 data 및 method의 정의 가능
+
+method안에서 data를 "this.데이터이름" 으로 접근 가능
