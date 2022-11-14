@@ -24,7 +24,7 @@ filter를 이용하여 표현식에 새로운 결과 형식을 적용
 
 중괄호 보간법 `{{}}` 또는 `v-bind` 속성에서 사용이 가능
 
-```html
+```vue
 {{ value | filter }}
 
 v-bind:id="rawId | formatId"

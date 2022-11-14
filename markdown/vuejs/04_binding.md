@@ -104,7 +104,7 @@ new Vue({
 
 `v-model` 표현식의 초기 값이 어떤 옵션에도 없으면 `<select>` element는 "선택없음" 상태로 렌더링
 
-사용하지 넣는 옵션에 빈 값을 넣는 것이 좋다.
+사용하지 않는 옵션에 빈 값을 넣는 것이 좋다.
 
 ```javascript
 <select v-model="selected">
